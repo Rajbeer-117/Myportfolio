@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: red;
+}
+
+section{
+    margin-top: -2%;
+    background: blue;
+    padding: 100px 0;
+    transform: skew(0deg, -10deg) translateY(-120px);
+}
+
+.contain{
+    
+    padding: 150px 200px;
+    transform: skew(0deg, 10deg);
+ 
+}
+
+
+
