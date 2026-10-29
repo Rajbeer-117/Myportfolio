@@ -6,42 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      
 
-    <title>Rajbeer kaur Dutta</title>
+    <title>Rajbeer Kaur Dutta </title>
+    <meta name="description" content="Portfolio of Rajbeer Kaur Dutta, a Master of Applied Computing student at the University of Windsor working across AI and data, cybersecurity and full-stack development.">
+    <meta name="theme-color" content="#100028">
 
-    <link rel="icon" type="image/x-icon" href="images/illustration/fevicon1.jpg" />
+    <link rel="icon" type="image/x-icon" href="images/illustration/favicon1.jpg" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
+    <!-- Fonts: one request for every family and weight the site uses -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Play:wght@400;700&family=Train+One&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" integrity="sha512-nIm/JGUwrzblLex/meoxJSPdAKQOe2bLhnrZ81g5Jbh519z8GFJIWu87WAhBH+RAyGbM4+U3S2h+kL5JoV6/wA==" crossorigin="anonymous" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" integrity="sha512-nIm/JGUwrzblLex/meoxJSPdAKQOe2bLhnrZ81g5Jbh519z8GFJIWu87WAhBH+RAyGbM4+U3S2h+kL5JoV6/wA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" /> 
-<link rel="stylesheet" href="assets/css/Style.css">   
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&family=Pacifico&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-   
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Play&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
 
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body onload="myFunction()">
+    <!-- Shared SVG filter for the .liquid-btn glass effect. Defined once; the CSS references it by id.
+         (width/height 0 rather than display:none, which can stop browsers from using the filter.) -->
+    <svg class="liquid-filter" width="0" height="0" aria-hidden="true" focusable="false">
+        <defs>
+            <filter id="container-glass" x="0%" y="0%" width="100%" height="100%" color-interpolation-filters="sRGB">
+                <feTurbulence type="fractalNoise" baseFrequency="0.05 0.05" numOctaves="1" seed="1" result="turbulence"/>
+                <feGaussianBlur in="turbulence" stdDeviation="2" result="blurredNoise"/>
+                <feDisplacementMap in="SourceGraphic" in2="blurredNoise" scale="70" xChannelSelector="R" yChannelSelector="B" result="displaced"/>
+                <feGaussianBlur in="displaced" stdDeviation="4" result="finalBlur"/>
+                <feComposite in="finalBlur" in2="finalBlur" operator="over"/>
+            </filter>
+        </defs>
+    </svg>
       <div id="loader_bg">
          <div class="d-flex w-100 flex-column align-items-center justify-content-center">
             <div class="animate__animated animate__fadeOutDown ">   </div>
@@ -59,7 +56,7 @@
   
 
   
-    <div class="container-fluid px-0">
+    <div class="container-fluid px-0 mobile-nav-wrap">
        <!-- <div class="header_mob d-lg-none d-flex align-items-center justify-content-around">
         <div class="header_logo"><h2>RJD</h2></div>
       
@@ -79,10 +76,9 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a href="#1" class="nav-link" id="HM">Home</a></li>
                     <li class="nav-item"><a href="#2" class="nav-link">About</a></li>
-                  
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                     <li class="nav-item"><a href="#3" class="nav-link">Portfolio</a></li>
-                  
-                    <li class="nav-item"><a href="#4" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -93,19 +89,20 @@
        
             
             <header class="header  d-none d-lg-inline-block " data-aos="fade-up"
-            data-aos-duration="3000">
+            data-aos-duration="900">
                 <div class="container d-flex">
                     <div class="row d-flex align-items-center ">
-                        <div class="col-lg-6 col-xl-8" >
+                        <div class="col" >
                            <h2>RJD</h2>
                         </div>
-                        <div class="col-4 ">
+                        <div class="col-auto">
                             <div class="header_nav_option ">
                                 <ul class="d-flex list-unstyled">
                                     <li><a href="#1" class="hover-line">home</a></li>
                                     <li><a href="#2" class="hover-line">about</a></li>
-                                    <li><a href="#3"class="hover-line">portfolio</a></li>
-                                    <li><a href="#4"class="hover-line">contact</a></li>
+                                    <li><a href="#projects" class="hover-line">projects</a></li>
+                                    <li><a href="#3" class="hover-line">portfolio</a></li>
+                                    <li><a href="#contact" class="hover-line">contact</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -116,6 +113,8 @@
             <div class="hero position-relative" id="parallax">
                
                 <div class="hero_item  pb-5" id="1">
+                    <!-- Animated glass-tile background (WebGL, see js/glass-tiles.js). Without WebGL it hides itself and the hero photo shows. -->
+                    <div class="gt gt--layer" data-glass-tiles data-pointer="parent" data-columns="8" aria-hidden="true"></div>
                     <section class="pb-5">
                         <div class="container d-flex flex-column flex-lg-row flex-md-row px-0"class="layer expand-width" data-depth="0.15">
                             <div class="row ">
@@ -124,7 +123,7 @@
                                         <!-- <span class="">Frontend Developer<br> Full Stack Java Developer</span> -->
 
                                         <span class="hero-role">
-                                           SOFTWARE ENGINEER • CREATIVE PROBLEM SOLVER
+                                           SOFTWARE ENGINEER •  PROBLEM SOLVER
                                             <br>
                                              AI & DATA | CYBERSECURITY | FULL-STACK DEVELOPER
                                                     </span>
@@ -135,7 +134,10 @@
     Building intelligent solutions, one line of code at a time.
 </p>
 
-                                        <a href="#2" class="primary-btn  ">About</a>
+                                        <div class="hero-actions">
+                                            <a href="#2" class="liquid-btn">About</a>
+                                            <a href="#projects" class="liquid-btn">Projects</a>
+                                        </div>
                                     </div>
                                 </div>
                             
@@ -154,7 +156,7 @@
                 </div>
             </div>
 <section class="services spad mt-5 pt-5 "data-aos="fade-down fade-in"
-data-aos-duration="3000"id="2" m>
+data-aos-duration="900" id="2">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-12">
@@ -196,7 +198,7 @@ data-aos-duration="3000"id="2" m>
         secure, scalable, and practical solutions.
     </p>
 
-    <a href="#4" class="primary-btn mt-4">
+    <a href="#contact" class="primary-btn mt-4">
         LET'S CONNECT
     </a>
 
@@ -219,7 +221,7 @@ data-aos-duration="3000"id="2" m>
                             <a href="images/illustration/gym.png" >
                             
                                 <div class="services__item__icon mt-5  mt-md-0 mt-lg-0 ">
-                                    <img src="images/illustration/team-img-1.png" alt="img" >
+                                    <img src="images/illustration/team-img-1.png" alt="Gym fitness website preview">
         
                                 </div>
                             </a>
@@ -240,7 +242,7 @@ data-aos-duration="3000"id="2" m>
                                 <a href="images/illustration/furniturefull.jpg.png" >
                               
                                     <div class="services__item__icon mt-5  mt-md-0 mt-lg-0 ">
-                                        <img src="images/illustration/furniture.jpg" alt="img" >
+                                        <img src="images/illustration/furniture.jpg" alt="Furniture store website preview">
             
                                     </div>
                                 </a>
@@ -261,7 +263,7 @@ data-aos-duration="3000"id="2" m>
                             <div class="services__item__icon ">
                              
                              
-                                <img src="images/illustration/photography.jpg">
+                                <img src="images/illustration/photography.jpg" alt="Photography website preview">
                             
                             
                           
@@ -282,7 +284,7 @@ data-aos-duration="3000"id="2" m>
                          <div class="gallarys">
                             <a href="images/illustration/icecreme2.jpg.png">
                                 <div class="services__item__icon">
-                                    <img src="images/illustration/icecreme.jpg" alt="img" >
+                                    <img src="images/illustration/icecreme.jpg" alt="Ice-cream shop website preview">
         
                          </div>
                             </div>
@@ -379,8 +381,98 @@ data-aos-duration="3000"id="2" m>
 </section>
 
 
+<!-- FEATURED PROJECTS
+     To add a project: copy one <article class="project-card"> block, change the image, text and the two GitHub links.
+     Put the screenshot in images/projects/ (16:10 works best). -->
+<section class="featured-projects" id="projects">
+    <div class="container">
+
+        <div class="featured-projects__head">
+            <h2>Featured Projects</h2>
+            <div class="featured-projects__rule"></div>
+            <p>Turning ideas into real-world solutions through innovative projects, modern technologies, and practical problem-solving.</p>
+        </div>
+
+        <div class="project-grid">
+
+            <article class="project-card">
+                <div class="project-card__media">
+                    <div class="project-card__bar" aria-hidden="true">
+                        <span class="project-card__dots"><i></i><i></i><i></i></span>
+                        <span class="project-card__url">github.com/Rajbeer-117/HealthLens</span>
+                    </div>
+                    <img src="images/projects/healthlens.webp" width="1200" height="750" loading="lazy" decoding="async"
+                         alt="HealthLens sign-in page with PranaChain branding, a purple panel and a Welcome Back form">
+                </div>
+                <div class="project-card__body">
+                    <h3 class="project-card__title">HealthLens</h3>
+                    <!-- <p class="project-card__context">Group project for COMP 8967 at the University of Windsor. Academic prototype using synthetic data only.</p> -->
+                    <p class="project-card__desc">An AI-powered health intelligence platform that unifies patient records, lab results, and wearable data into an interactive dashboard. Features health trend visualizations, explainable AI-generated observations, and a locally deployed Llama 3.2 model for privacy-conscious analysis.</p>
+                    <ul class="project-card__tags" aria-label="Technologies">
+                        <li>Python</li><li>Flask</li><li>pandas</li><li>Chart.js</li><li>SQLite</li><li>Ollama</li>
+                    </ul>
+                    <div class="project-card__cta">
+                        <a class="project-link" href="https://github.com/Rajbeer-117/HealthLens" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github" aria-hidden="true"></i> View on GitHub<span class="sr-only"> for HealthLens (opens in a new tab)</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-card__media">
+                    <div class="project-card__bar" aria-hidden="true">
+                        <span class="project-card__dots"><i></i><i></i><i></i></span>
+                        <span class="project-card__url">github.com/Rajbeer-117/hybrid-cyber-vector-project</span>
+                    </div>
+                    <img src="images/projects/hybrid-cyber-vector.webp" width="1200" height="749" loading="lazy" decoding="async"
+                         alt="Hybrid Cybersecurity Threat Intelligence Retrieval search page showing ranked CVE results for remote code execution in a Windows service">
+                </div>
+                <div class="project-card__body">
+                    <h3 class="project-card__title">Hybrid Retrieval Benchmark</h3>
+                    <!-- <p class="project-card__context">Group project for COMP 8157, Advanced Database Topics, at the University of Windsor.</p> -->
+                    <p class="project-card__desc">Built an intelligent cybersecurity search and benchmarking system using NVD/CVE and MITRE ATT&CK datasets. Combined Sentence-BERT semantic embeddings with metadata filtering to retrieve relevant security threats and compare PostgreSQL/pgvector, Milvus, and Weaviate based on search accuracy, latency, and performance.</p>
+                    <ul class="project-card__tags" aria-label="Technologies">
+                        <li>Python</li><li>PostgreSQL</li><li>pgvector</li><li>Milvus</li><li>Weaviate</li><li>Docker</li>
+                    </ul>
+                    <div class="project-card__cta">
+                        <a class="project-link" href="https://github.com/Rajbeer-117/hybrid-cyber-vector-project" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github" aria-hidden="true"></i> View on GitHub<span class="sr-only"> for Hybrid Retrieval Benchmark (opens in a new tab)</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-card__media">
+                    <div class="project-card__bar" aria-hidden="true">
+                        <span class="project-card__dots"><i></i><i></i><i></i></span>
+                        <span class="project-card__url">github.com/Rajbeer-117/StudySync</span>
+                    </div>
+                    <img src="images/projects/studysync.webp" width="1200" height="750" loading="lazy" decoding="async"
+                         alt="StudySync home page with the headline Better study sessions start here and a study plan card showing a tutoring session and a study room booking">
+                </div>
+                <div class="project-card__body">
+                    <h3 class="project-card__title">StudySync</h3>
+                    <!-- <p class="project-card__context">Group project for Internet Applications and Distributed Systems at the University of Windsor. In development.</p> -->
+                    <p class="project-card__desc">A full-stack Django web application designed to simplify campus tutoring and study room reservations. Integrates tutor discovery, subject-based search, interactive dashboards, and scheduling workflows with double-booking prevention to create a seamless student experience.</p>
+                    <ul class="project-card__tags" aria-label="Technologies">
+                        <li>Python</li><li>Django</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
+                    </ul>
+                    <div class="project-card__cta">
+                        <a class="project-link" href="https://github.com/Rajbeer-117/StudySync" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github" aria-hidden="true"></i> View on GitHub<span class="sr-only"> for StudySync (opens in a new tab)</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
     <section class="head d-flex align-items-center justify-content-center" data-aos="fade-down "
-    data-aos-duration="3000" id="3" >
+    data-aos-duration="900" id="3" >
        
             <p class="pt-5 newhead animate__animated animate__rubberBand">work <span>gallery</span></p>
         </div>
@@ -395,7 +487,7 @@ data-aos-duration="3000"id="2" m>
                         <div class="col-lg-4 col-12 col-md-6  " >
                             <div class="card middle">
                                 <div class="front">
-                                  <img src="images/illustration/jwellary.jpg.png" alt="" class="w-100 h-100">
+                                  <img src="images/illustration/jwellary.jpg.png" alt="Jewellery website preview" class="w-100 h-100">
                                 </div>
                                 <div class="back d-flex align-items-center">
                                     <div class="back-content middle  ">
@@ -417,7 +509,7 @@ data-aos-duration="3000"id="2" m>
 
                             <div class="card middle">
                                 <div class="front">
-                                 <img src="images/illustration/flower.jpg.png" class="w-100 h-100">
+                                 <img src="images/illustration/flower.jpg.png" alt="Flower decoration website preview" class="w-100 h-100">
                                 </div>
                                 <div class="back d-flex align-items-center">
                                     <div class="back-content middle  ">
@@ -435,7 +527,7 @@ data-aos-duration="3000"id="2" m>
                         <div class="col-lg-4 mt-3 mt-lg-0 col-12 col-md-6">
                             <div class="card middle">
                                 <div class="front">
-                                    <img src="images/illustration/bycyle.jpg.png" class="w-100 h-100">
+                                    <img src="images/illustration/bycyle.jpg.png" alt="Bicycle shop website preview" class="w-100 h-100">
 
                                 </div>
                                 <div class="back d-flex align-items-center">
@@ -457,7 +549,7 @@ data-aos-duration="3000"id="2" m>
                         <div class="col-lg-4 col-12 col-md-6 ">
                             <div class="card middle">
                                 <div class="front">
-                                       <img src="images/illustration/coronatemplate.jpg.png" class="w-100 h-100">                       </div>
+                                       <img src="images/illustration/coronatemplate.jpg.png" alt="Coronavirus information website preview" class="w-100 h-100">                       </div>
                                 <div class="back d-flex align-items-center">
                                     <div class="back-content middle  ">
                                         <h2>CORONA</h2>
@@ -473,7 +565,7 @@ data-aos-duration="3000"id="2" m>
                         <div class="col-lg-4 col-12 mt-3 mt-md-0  col-md-6 mt-lg-0" >
                             <div class="card middle">
                                 <div class="front">
-                                  <img src="images/illustration/cake.jpg.png" alt="" class="w-100 h-100">
+                                  <img src="images/illustration/cake.jpg.png" alt="Cake shop website preview" class="w-100 h-100">
                                 </div>
                                 <div class="back d-flex align-items-center">
                                     <div class="back-content middle  ">
@@ -491,7 +583,7 @@ data-aos-duration="3000"id="2" m>
 
                             <div class="card middle">
                                 <div class="front">
-                                  <img src="images/illustration/wine.jpg.png" alt="" class="w-100 h-100">
+                                  <img src="images/illustration/wine.jpg.png" alt="Wine website preview" class="w-100 h-100">
                                 </div>
                                 <div class="back d-flex align-items-center">
                                     <div class="back-content middle  ">
@@ -511,7 +603,7 @@ data-aos-duration="3000"id="2" m>
             </div>
 
         </section>
-    <section class="container-fluid d-flex flex-column  mt-5 justify-content-center align-items-center skill">
+    <section class="container-fluid d-flex flex-column  mt-5 justify-content-center align-items-center skill" id="tech">
         <h1>My Tech Stack</h1>
         <div class="line"></div>
     </section>
@@ -802,40 +894,48 @@ data-aos-duration="3000"id="2" m>
 </section>
 
 
-    <section class="container-fluid d-flex justify-content-center flex-column align-items-center mt-5 mb-5 contact"><h1>Contact Me</h1>
-        <div class="line2"></div>
-    </section>
+    <footer class="site-footer" id="contact">
+        <div class="container">
+            <div class="site-footer__grid">
 
+                <div class="site-footer__brand">
+                    <a href="#1" class="site-footer__logo" aria-label="Back to the top">RJD</a>
+                    <p class="site-footer__name">Rajbeer Kaur Dutta</p>
+                    <p>Master of Applied Computing student at the University of Windsor, working across AI and data, cybersecurity and full-stack development.</p>
+                </div>
 
-    <section class=""
-    data-aos="zoom-in" id="4">
-        <form name="frm_contact_us" id="frm_contact_us" method="post" action="send_msg.php" class="m-3">
-            <div class="text-color text-center mt-lg-5"><b>All fields are mandatory</b></div>
-           <div class="d-flex mt-lg-5 mt-0 flex-column flex-lg-row  flex-md-row justify-content-lg-around justify-content-around justify-content-md-around ">
-            <div class="form-group">
-                <label for="txtname">Name</label>
-                <input type="text" name="txtname" placeholder="Enter your name" id="txtname" class="form-control" />
+                <nav class="site-footer__col" aria-label="Footer">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="#1">Home</a></li>
+                        <li><a href="#2">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#3">Portfolio</a></li>
+                        <li><a href="#tech">Tech stack</a></li>
+                    </ul>
+                </nav>
+
+                <div class="site-footer__col">
+                    <h3>Get in touch</h3>
+                    <p class="site-footer__invite">Have a project, a question or an opportunity? Send me an email.</p>
+                    <ul class="site-footer__contact">
+                        <li><a href="mailto:rajbeerdutta@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i>rajbeerdutta@gmail.com</a></li>
+                        <li><a href="https://www.linkedin.com/in/rajbeer-kaur-dutta/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i>linkedin.com/in/rajbeer-kaur-dutta<span class="sr-only"> (opens in a new tab)</span></a></li>
+                        
+                        <!-- LinkedIn: remove the comment markers and paste your profile URL.
+                        <li><a href="https://www.linkedin.com/in/YOUR-PROFILE/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i>LinkedIn<span class="sr-only"> (opens in a new tab)</span></a></li>
+                        -->
+                    </ul>
+                </div>
+
             </div>
-            <div class="form-group">
-                <label for="txtphone">Contact No.</label>
-                <input type="text" name="txtphone" id="txtphone" placeholder="enter your number" class="form-control" />
+
+            <div class="site-footer__bar">
+                <span>&copy; <span id="year">2026</span> Rajbeer Kaur Dutta.</span>
+                <a href="#1">Back to top</a>
             </div>
-           </div>
-           <div class="d-lg-flex d-block d-md-flex justify-content-around">
-            <div class="form-group mt-3">
-                <label for="txtemail">EmailID</label>
-                <input type="email" name="txtemail" id="txtemail" placeholder="enter your email id" class="form-control" pattern="" />
-            </div>
-            <div class="form-group ">
-                <label for="txtmsg">Message</label>
-                <textarea class="form-control" name="txtmsg" id="ta_msg" placeholder="Type your msg here"></textarea>
-            </div>
-           </div>
-            <div class="form-group mt-5 text-center ">
-                <button type="submit" name="submit" class="btn  primary-btn">Send Message</button>
-            </div>
-        </form>
-    </section>
+        </div>
+    </footer>
     
      
     <!-- <div id="menu" class="sidemenu">
@@ -860,16 +960,14 @@ data-aos-duration="3000"id="2" m>
        
           <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
           <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
           <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js" integrity="sha512-+m6t3R87+6LdtYiCzRhC5+E0l4VQ9qIT1H9+t1wmHkMJvvUQNI5MKKb7b08WL4Kgp9K0IBgHDSLCRJk05cFUYg==" crossorigin="anonymous"></script>
           
           <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous"></script>
-         <script src="js/jqurey.validate.js"></script>
-          <script src="js/contact_us.js"></script>
-          <script src="js/script.js"></script> 
+          <script src="js/glass-tiles.js"></script>
+    <script src="js/script.js"></script> 
        
 
       
